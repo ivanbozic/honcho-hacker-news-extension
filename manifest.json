@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Hacker News Prettier",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["https://news.ycombinator.com/*"],
+        "css": ["style.css"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+    }]
+}
