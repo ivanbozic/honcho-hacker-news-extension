@@ -38,7 +38,16 @@ span.pagetop a {
 }
 
 @media (prefers-color-scheme: dark) {
-    span.pagetop a {
+    span.pagetop {
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    span.pagetop b.hnname a {
+        color: #ff6600;
+    }
+
+    span.pagetop a,
+    span.pagetop a:visited {
         color: rgba(255, 255, 255, 0.5);
     }
 }
@@ -59,6 +68,17 @@ table.itemlist {
 span.commtext {
     font-size: 15px;
     line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark) {
+    span.commtext {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    span.commtext a:link,
+    .reply a:link {
+        color: rgba(255, 255, 255, 0.75);
+    }
 }
 
 tr.athing.comtr td {
@@ -100,7 +120,28 @@ a:link.storylink:hover {
     }
 
     .title a.storylink:visited {
-        color: #3d425a !important;
+        color: #4b4f61 !important;
         text-decoration: line-through !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .yclinks a:link {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .profileform a:link {
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    input[type="text"],
+    textarea {
+        background: rgba(255, 255, 255, 0.05);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.25);
     }
 }

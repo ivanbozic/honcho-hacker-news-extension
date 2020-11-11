@@ -1,11 +1,18 @@
 {
     "manifest_version": 2,
-    "name": "Hacker News Sharp",
+    "name": "Honcho — A cleaner, nicer Hacker News",
+    "description": "Honcho updates the Hacker News by improving the layout and legibility.",
     "version": "1.0",
     "content_scripts": [{
         "matches": ["https://news.ycombinator.com/*"],
         "css": ["style.css"],
         "js": ["content.js"],
         "run_at": "document_idle"
-    }]
+    }],
+    "icons": {
+        "16": "icon_16.png",
+        "32": "icon_32.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
 }
