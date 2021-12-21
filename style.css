@@ -95,16 +95,16 @@ table.comment-tree {
     margin: 0 auto;
 }
 
-a:link.storylink {
+a:link.titlelink {
     font-size: 18px;
     font-weight: 600;
 }
 
-a:link.storylink:hover {
+a:link.titlelink:hover {
     color: #ff6600;
 }
 
-.title a.storylink:visited {
+.title a.titlelink:visited {
     color: #b0b0b0 !important;
     text-decoration: line-through !important;
 }
@@ -115,11 +115,11 @@ a:link.storylink:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-    a:link.storylink {
+    a:link.titlelink {
         color: rgba(255, 255, 255, 0.75);
     }
 
-    .title a.storylink:visited {
+    .title a.titlelink:visited {
         color: #4b4f61 !important;
         text-decoration: line-through !important;
     }
